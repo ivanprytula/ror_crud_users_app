@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Project is bootstrapped with great `RubyMine` IDE
+* Ruby version - `3.1.2`
+* Rails version - `7.0.3`
+* DB - `sqlite3`
 
-Things you may want to cover:
+How to start?
 
-* Ruby version
+```shell
+rvm install 3.1.2
+rvm use 3.1.2
+bundle install
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Spin the wheel!
+bin/rails server
+```
