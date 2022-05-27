@@ -1,6 +1,6 @@
 <div class="container my-3">
   <h1 class="text-center">Data to perform CRUD Operations</h1>
-  <%= link_to new_user_path, class: "btn btn-outline-dark mb-2" do %>
+  <%= link_to new_customer_path, class: "btn btn-outline-dark mb-2" do %>
     <i class="bi bi-person-plus"></i> Create New User
   <% end %>
 
@@ -19,24 +19,24 @@
       </thead>
 
       <tbody>
-      <% @users.each do |user| %>
+      <% @customers.each do |customer| %>
         <tr>
-          <th scope="row"><%= user.id %></th>
-          <td><%= user.username %></td>
-          <td><%= user.email %></td>
-          <td><%= user.password %></td>
+          <th scope="row"><%= customer.id %></th>
+          <td><%= customer.username %></td>
+          <td><%= customer.email %></td>
+          <td><%= customer.password %></td>
           <td class='text-center'>
-            <%= link_to user, class: "btn btn-primary" do %>
+            <%= link_to customer, class: "btn btn-primary" do %>
               <i class="bi bi-eye"></i> VIEW
             <% end %>
           </td>
           <td class='text-center'>
-            <%= link_to edit_user_path(user), class: "btn btn-secondary" do %>
+            <%= link_to edit_customer_path(customer), class: "btn btn-secondary" do %>
               <i class="bi bi-pencil"></i> EDIT
             <% end %>
           </td>
           <td class='text-center'>
-            <%= button_to user, method: :delete, class: "btn btn-danger" do %>
+            <%= button_to customer, method: :delete, class: "btn btn-danger" do %>
               <i class="bi bi-trash"></i> DELETE
             <% end %>
           </td>

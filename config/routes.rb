@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users
+  resources :customers
   # Defines the root path route ("localhost:3000/")
   root 'home#index'
 
